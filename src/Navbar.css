@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR CONTAINER */
+.header-navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background: rgb(238, 236, 239);
+  /* your brown color */
+  box-sizing: border-box;
+  margin: 0;
+  /* VERY IMPORTANT */
+}
+
+/* LOGO + NAME */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-name span {
+  color: #3c6e71;
+}
+
+/* NAV LINKS */
+.nav-content ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-content ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.nav-content ul li a:hover {
+  color: #3c6e71;
+}
+
+/* ICON */
+.nav-content i {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+
+.nav-btn {
+  padding: 10px 25px;
+  background: #49a0b4;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: none;
+}
