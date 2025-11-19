@@ -1,14 +1,14 @@
 import './App.css'
-import Navbar from './Navbar';
-import TopBar from './TopBar';
-import BG from './BG';
+import Department2 from './Department2';
+import FirstPage from './FirstPage';
+import Medical3 from './Medical3';
 
 function App() {
   return (
     <>
-      <TopBar />
-      <Navbar />
-      <BG/>
+      <FirstPage/>
+      <Department2/>
+      <Medical3/>
     </>
   );
 }
