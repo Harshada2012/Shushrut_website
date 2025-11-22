@@ -1,44 +1,48 @@
-import './Department.css'
+import React from "react";
+import "./Department.css";
 
-export default function Department2() {
-    const items = [
-        { img: "1.png" },
-        { img: "2.png" },
-        { img: "3.png" },
-        { img: "4.png" }
-    ];
+export default function Department() {
+  const departments = [
+    {
+      title: "General EMR",
+      icon: "/depart_icon/general.png",
+    },
+    {
+      title: "Ophthalmology EMR",
+      icon: "/depart_icon/opthalmology.png",
+    },
+    {
+      title: "Gynaec EMR",
+      icon: "/depart_icon/gyneac.png",
+    },
+    {
+      title: "Paediatric EMR",
+      icon: "/depart_icon/pediatric.png",
+    },
+    {
+      title: "Orthopaedic EMR",
+      icon: "/depart_icon/orthopaedic.png",
+    },
+    {
+      title: "Spine & Neuro EMR",
+      icon: "/depart_icon/spine and neuro.png",
+    },
+  ];
 
-    const items2 = [
-        { img: "5.png" },
-        { img: "6.png" }
-    ];
+  return (
+    <div className="department-section">
+      <h2>Our Department</h2>
 
-    return (
-        <div className="departments-section">
+      <div className="dept-grid">
+        {departments.map((item, index) => (
+          <div className="dept-card" key={index}>
+            <img src={item.icon} alt={item.title} className="dept-icon" />
+            <p>{item.title}</p>
+          </div>
+        ))}
+      </div>
 
-            <div className='dept-heading'>
-                <h2>Our Top Specialist</h2>
-                <br />
-                <h1>Our Department</h1>
-            </div>
-
-            <div className="dept-grid1">
-                {items.map((item, index) => (
-                    <div className="dept-card" key={index}>
-                        <img src={item.img} alt="" className="dept-img" />
-                    </div>
-                ))}
-            </div>
-
-            <div className="dept-grid2">
-                {items2.map((item2, index) => (
-                    <div className="dept-card" key={index}>
-                        <img src={item2.img} alt="" className="dept-img" />
-                    </div>
-                ))}
-            </div>
-
-            <button className="dept-btn"><b>Make an Appointment</b></button>
-        </div>
-    );
+      <button className="appoint-btn">Make An Appointment</button>
+    </div>
+  );
 }

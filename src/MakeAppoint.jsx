@@ -8,7 +8,7 @@ const MakeAppoint = () => {
         <p className="appoint-subtitle">Get a Checkup From Doctors</p>
         <h2 className="appoint-title">Make An Online Appointment?</h2>
         <p className="appoint-desc">
-          Get appointments of specialist doctors: +707 355–633–755
+          Get appointments of specialist doctors: +91 99230 48739
         </p>
 
         <button className="appoint-btn">Book Appointment</button>

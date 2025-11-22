@@ -14,7 +14,6 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
 
-                {/* LOGO + DESCRIPTION */}
                 <div className="footer-section">
                     <h2 className="footer-logo"><img src="./logo.png"></img> Shushrut System</h2>
                     <p>
@@ -24,7 +23,6 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* CONTACT */}
                 <div className="footer-section">
                     <h3>Contact Us</h3>
                     <p><IoCall className="icon" /> +91 99230 48739</p>
@@ -32,7 +30,6 @@ const Footer = () => {
                     <p><IoLocationSharp className="icon" /> Maharashtra, India</p>
                 </div>
 
-                {/* QUICK LINKS */}
                 <div className="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
@@ -52,7 +49,6 @@ const Footer = () => {
                     <FaGlobe />
                 </div>
             </div>
-
 
             <div className="footer-bottom">
                 © 2025 Shushrut System Pvt. Ltd. All rights reserved.

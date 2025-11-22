@@ -1,77 +1,62 @@
 .values-section {
-  padding: 60px 0 80px;
-  background: linear-gradient(to bottom, #eaf3ff 0%, #ffffff 100%);
+  padding: 70px 10%;
   text-align: center;
+  background: #eef6ff; /* soft blue bg */
 }
 
 .values-title {
-  font-size: 34px;
-  font-weight: 800;
-  color: #0b1b4a;
-  margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0e244b;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-.underline {
-  width: 70px;
-  height: 4px;
-  background: #ffb829;
-  border-radius: 3px;
-  margin: 0 auto 40px;
+.values-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: #f2b544;
+  border-radius: 5px;
+  margin: 12px auto 0;
 }
 
-/* GRID */
 .values-grid {
-  max-width: 1100px;
-  margin: auto;
   display: grid;
-  gap: 25px;
   grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
 }
 
-@media (max-width: 900px) {
-  .values-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .values-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* CARD */
 .value-card {
-  background: #fff;
-  padding: 30px 25px;
-  border-radius: 18px;
-  border: 1px solid #dfe6f1;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  transition: all 0.25s ease;
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
 }
 
 .value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.10);
 }
 
-/* ICON */
 .value-icon {
-  font-size: 42px;
-  margin-bottom: 15px;
+  height: 70px;
+  margin-bottom: 25px;
 }
 
-/* TEXTS */
 .value-card h3 {
-  color: #0b1b4a;
-  font-size: 20px;
+  color: #0e244b;
+  font-size: 22px;
+  font-weight: 700;
   margin-bottom: 10px;
-  font-weight: 600;
 }
 
 .value-card p {
+  font-size: 16px;
   color: #555;
-  font-size: 15px;
+  max-width: 80%;
+  margin: 0 auto;
   line-height: 1.6;
 }

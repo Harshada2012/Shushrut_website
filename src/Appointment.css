@@ -19,10 +19,10 @@
   background: #0a2342;
   padding: 60px 50px;
   color: #fff;
-  text-align: center;       /* Center text */
+  text-align: center;     
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Center content vertically */
+  justify-content: center;  
   align-items: center; 
 }
 
@@ -99,7 +99,6 @@ textarea {
   background: #2abac3;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .appointment-section {
     flex-direction: column;

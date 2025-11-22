@@ -1,46 +1,39 @@
 import React from "react";
 import "./Values4.css";
 
-const valuesData = [
-  {
-    icon: "🤝",
-    title: "Customer Centric",
-    desc: "We align our solutions with real client needs — driven by empathy and precision.",
-    color: "#1f8f3a",
-  },
-  {
-    icon: "🧑‍💼",
-    title: "Employee Empowerment",
-    desc: "Our team drives our success — encouraged to own, innovate, and grow together.",
-    color: "#e68a1a",
-  },
-  {
-    icon: "💡",
-    title: "Innovative & Creative",
-    desc: "We fuse tech with insight to build future-ready, transformative healthcare tools.",
-    color: "#1a56db",
-  },
-];
+export default function Values4() {
+  const values = [
+    {
+      title: "Customer Centric",
+      desc: "We align our solutions with real client needs — driven by empathy and precision.",
+      icon: "/values_icon/1st.png",
+    },
+    {
+      title: "Employee Empowerment",
+      desc: "Our team drives our success — encouraged to own, innovate, and grow together.",
+      icon: "/values_icon/2nd.png",
+    },
+    {
+      title: "Innovative & Creative",
+      desc: "We fuse tech with insight to build future-ready, transformative healthcare tools.",
+      icon: "/values_icon/3rd.png",
+    },
+  ];
 
-const Values = () => {
   return (
-    <section className="values-section">
+    <div className="values-section">
       <h2 className="values-title">Our Core Values</h2>
-      <div className="underline"></div>
 
       <div className="values-grid">
-        {valuesData.map((item, index) => (
-          <div className="value-card" key={index}>
-            <div className="value-icon" style={{ color: item.color }}>
-              {item.icon}
-            </div>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
+        {values.map((v, i) => (
+          <div className="value-card" key={i}>
+            <img src={v.icon} className="value-icon" alt={v.title} />
+
+            <h3>{v.title}</h3>
+            <p>{v.desc}</p>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Values;
+}
