@@ -1,0 +1,59 @@
+.make-appoint-section {
+  background: url('/MakeAppoint.jpeg'); /* ← replace with your background */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.make-appoint-overlay {
+  max-width: 900px;
+  margin: auto;
+}
+
+.appoint-subtitle {
+  font-size: 16px;
+  color: #aed9ff;
+  margin-bottom: 12px;
+}
+
+.appoint-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.appoint-desc {
+  font-size: 18px;
+  color: #d8e9ff;
+  margin-bottom: 35px;
+}
+
+.appoint-btn {
+  background: #56d2e9;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0b1b35;
+  transition: 0.25s ease;
+}
+
+.appoint-btn:hover {
+  background: #41bfd7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .appoint-title {
+    font-size: 28px;
+  }
+
+  .appoint-desc {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,41 @@
+.testimonial-subtitle{
+    text-align: center;
+    justify-content: center;
+    color: #3ac7c9;
+    font-size: 30px;
+}
+
+.slider-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.testimonial-slide {
+    padding: 10px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-dots li button:before {
+    color: #3ac7c9;
+}

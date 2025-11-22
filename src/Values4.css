@@ -1,0 +1,77 @@
+.values-section {
+  padding: 60px 0 80px;
+  background: linear-gradient(to bottom, #eaf3ff 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.values-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0b1b4a;
+  margin-bottom: 8px;
+}
+
+.underline {
+  width: 70px;
+  height: 4px;
+  background: #ffb829;
+  border-radius: 3px;
+  margin: 0 auto 40px;
+}
+
+/* GRID */
+.values-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD */
+.value-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  border: 1px solid #dfe6f1;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON */
+.value-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+/* TEXTS */
+.value-card h3 {
+  color: #0b1b4a;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.value-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
