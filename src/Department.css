@@ -10,6 +10,30 @@
   margin-bottom: 40px;
 }
 
+.department-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3ac7c9;
+}
+
+.dept-content {
+  display: flex;
+  align-items: center;
+  gap: 18px; 
+}
+
+.dept-icon {
+  height: 70px;
+  width: 70px;
+}
+
+.dept-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d2a52;
+  margin: 0;
+}
+
 .dept-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
