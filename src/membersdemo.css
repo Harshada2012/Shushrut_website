@@ -1,0 +1,91 @@
+.members-section {
+  padding: 70px 8%;
+  background: #fdf6f4; /* light peach like Roche website */
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* Card */
+.member-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.member-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Content */
+.member-content {
+  padding: 22px 20px 28px 20px;
+}
+
+.member-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+  line-height: 1.3;
+}
+
+.member-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.member-date {
+  font-size: 14px;
+  color: #757575;
+  margin-top: 10px;
+}
+
+/* Button */
+.member-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.members-btn {
+  background: #0c4cc6;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.members-btn:hover {
+  background: #003c9b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .members-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}

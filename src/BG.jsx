@@ -8,7 +8,7 @@ export default function BG() {
             <div className="BG-content">
                 <button className="BG-tag">Welcome To Shushrut</button>
 
-                <h1>We Provide Best Medical & Health Care Services</h1>
+                <h1>Your trusted partner in healthcare.</h1>
 
                 <p>
                     With over 25 years of experience, we empower hospitals, clinics, diagnostics, and medical colleges with secure, scalable technology platforms.

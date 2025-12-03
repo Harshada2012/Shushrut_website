@@ -5,18 +5,16 @@ const Appointment = () => {
   return (
     <section className="appointment-section">
 
-      {/* LEFT IMAGE */}
       <div className="appointment-left">
         <img 
-          src="/app.jpeg" 
+          src="/demo.jpg" 
           alt="Doctors" 
           className="appointment-image"
         />
       </div>
 
-      {/* RIGHT FORM */}
       <div className="appointment-right">
-        <p className="appointment-subtitle">Online Appointment</p>
+        <p className="appointment-subtitle">Demo Appointment</p>
         <h2 className="appointment-title">Make An Appointment</h2>
 
         <form className="appointment-form">

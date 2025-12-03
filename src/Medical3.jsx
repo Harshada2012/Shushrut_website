@@ -9,8 +9,7 @@ export default function Medical3() {
                 <h4 className="hero-small-title">Welcome To Shushrut</h4>
 
                 <h2 className="hero-title">
-                    We're here when you need us <br />
-                    – for every <span>Care in the World</span>
+                    Empowering healthcare with technology and trust
                 </h2>
 
                 <p className="hero-desc">

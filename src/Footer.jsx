@@ -5,7 +5,6 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedinIn,
-    FaGlobe,
 } from "react-icons/fa6";
 import { IoMail, IoCall, IoLocationSharp } from "react-icons/io5";
 
@@ -15,7 +14,7 @@ const Footer = () => {
             <div className="footer-container">
 
                 <div className="footer-section">
-                    <h2 className="footer-logo"><img src="./logo.png"></img> Shushrut System</h2>
+                    <h2 className="footer-logo"><img src="./logo.png"></img> Shushrut System Pvt. Ltd.</h2>
                     <p>
                         Delivering smart, secure, and scalable healthcare IT solutions
                         to hospitals, clinics, diagnostics, and medical institutions
@@ -46,7 +45,6 @@ const Footer = () => {
                     <FaInstagram />
                     <FaTwitter />
                     <FaLinkedinIn />
-                    <FaGlobe />
                 </div>
             </div>
 

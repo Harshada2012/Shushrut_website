@@ -54,6 +54,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: all 0.25s ease;
   text-align: center;
+  cursor: pointer; /* makes card clickable */
 }
 
 .solution-card:hover {

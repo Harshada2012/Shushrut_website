@@ -3,17 +3,11 @@
   padding: 50px 10%;
 }
 
-.department-section h2 {
+.department-section h3 {
   font-size: 32px;
   font-weight: 700;
-  color: #0d2a52;
-  margin-bottom: 40px;
-}
-
-.department-section h3 {
-  font-size: 22px;
-  font-weight: 700;
   color: #3ac7c9;
+  margin-bottom: 40px;
 }
 
 .dept-content {
