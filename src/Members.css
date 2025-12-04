@@ -1,84 +1,75 @@
-.image-wrapper {
-  height: auto;
-  max-height: 330px;   /* the image can grow up to this */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  border-radius: 10px 10px 0 0;
-  padding: 10px;         /* prevents sticking to edges */
-}
-
-.member-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 20px;
 }
 
 .member-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.member-name,
-.member-specialty {
-  text-align: center;
-  width: 100%;
-  margin: 5px;
-}
-
-.hover-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: white;
-  overflow: hidden;
-  transition: height 0.6s ease-in-out;
-  padding: 20px;
+.left-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-}
-
-.line {
-  width: 40%;
-  height: 3px;
-  background: #000;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.hover-text {
-  color: navy;
-  font-size: 18px;
-  margin-top: 20px;
-  opacity: 0;
-  transform: translateY(20px);
   text-align: center;
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.image-wrapper:hover .hover-overlay {
-  height: 100%;
+.member-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 10px;
 }
 
-.image-wrapper:hover .member-img {
-  opacity: 0.2;
-  transform: scale(1.05);
+.member-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0 2px;
+  color: #2976a3;
 }
 
-.image-wrapper:hover .line {
-  opacity: 1;
-  transform: translateY(0);
+.role {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.image-wrapper:hover .hover-text {
-  opacity: 1;
-  transform: translateY(0);
+.right-section {
+  display: flex;
+  align-items: top;
+}
+
+.desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 22px;
+}
+
+@media (max-width: 900px) {
+  .members-container {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .right-section {
+    margin-top: 10px;
+  }
 }

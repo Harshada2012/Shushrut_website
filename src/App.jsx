@@ -11,6 +11,7 @@ import Bar from './Bar';
 import Team from './Team';
 import Footer from './Footer';
 import Members from './Members';
+import Ceo from './Ceo';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -38,8 +39,9 @@ function App() {
               <Appointment />
               <WhyChooseUs />
               <Clients />
+              <Ceo/>
               <Team />
-              {/* <Members /> */}
+              <Members />
               <Footer />
             </>
           }
