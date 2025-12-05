@@ -23,7 +23,7 @@ export default function Members() {
         },
         {
             name: "Mrs. Swarupa Deshpande",
-            role: "Support Engineer",
+            role: "Support Manager",
             img: "/members_icon/swarupa_deshpande.jpeg",
             desc: "Swarupa Deshpande has 6 years of experience and works as a Support Engineer. She is calm, composed, and handles every situation with clarity and patience. Despite her soft nature, she provides quick and effective support to customers, ensuring their issues are resolved smoothly. Her reliability, dedication, and customer-centric approach make her a highly trusted member of the team."
         },
@@ -34,14 +34,12 @@ export default function Members() {
       {team.map((member, index) => (
         <div className="member-card" key={index}>
 
-          {/* LEFT COLUMN: Image + Name + Role */}
           <div className="left-section">
             <img src={member.img} alt={member.name} className="member-img" />
             <h2 className="member-name">{member.name}</h2>
             <p className="role">{member.role}</p>
           </div>
 
-          {/* RIGHT COLUMN: Description */}
           <div className="right-section">
             <p className="desc">{member.desc}</p>
           </div>

@@ -1,7 +1,7 @@
 .values-section {
   padding: 70px 10%;
   text-align: center;
-  background: #eef6ff; /* soft blue bg */
+  background: #eef6ff;
 }
 
 .values-title {
@@ -22,6 +22,7 @@
   margin: 12px auto 0;
 }
 
+/* GRID FOR DESKTOP */
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -59,4 +60,63 @@
   max-width: 80%;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .values-title {
+    font-size: 30px;
+  }
+
+  .value-card {
+    padding: 35px 18px;
+  }
+
+  .value-icon {
+    height: 60px;
+  }
+
+  .value-card h3 {
+    font-size: 20px;
+  }
+
+  .value-card p {
+    font-size: 15px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .values-section {
+    padding: 50px 8%;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .values-title {
+    font-size: 28px;
+  }
+
+  .value-card {
+    padding: 30px 16px;
+  }
+
+  .value-icon {
+    height: 55px;
+  }
+
+  .value-card p {
+    max-width: 95%;
+    font-size: 14px;
+  }
 }

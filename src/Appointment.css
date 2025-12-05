@@ -2,10 +2,13 @@
   display: flex;
   width: 100%;
   min-height: 550px;
+  flex-wrap: wrap; /* helps prevent overflow */
 }
 
+/* LEFT IMAGE SECTION */
 .appointment-left {
   width: 50%;
+  min-height: 550px;
 }
 
 .appointment-image {
@@ -14,6 +17,7 @@
   object-fit: cover;
 }
 
+/* RIGHT FORM SECTION */
 .appointment-right {
   width: 50%;
   background: #0a2342;
@@ -28,7 +32,7 @@
 
 .appointment-subtitle {
   color: #3ac7c9;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -89,7 +93,7 @@ textarea {
   cursor: pointer;
   font-size: 16px;
   transition: 0.2s;
-   margin-top: 20px;
+  margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -99,6 +103,9 @@ textarea {
   background: #2abac3;
 }
 
+/* ----------- RESPONSIVE BREAKPOINTS ----------- */
+
+/* TABLETS */
 @media (max-width: 900px) {
   .appointment-section {
     flex-direction: column;
@@ -109,11 +116,49 @@ textarea {
     width: 100%;
   }
 
+  .appointment-left {
+    height: 350px; /* prevents image from becoming too tall */
+  }
+
   .appointment-right {
     padding: 40px 25px;
   }
 
   .form-row {
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .appointment-title {
+    font-size: 28px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .appointment-left {
+    height: 250px;
+  }
+
+  .appointment-title {
+    font-size: 24px;
+  }
+
+  .appointment-subtitle {
+    font-size: 15px;
+  }
+
+  .appointment-right {
+    padding: 30px 20px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  .appointment-btn {
+    font-size: 15px;
+    padding: 12px 25px;
   }
 }

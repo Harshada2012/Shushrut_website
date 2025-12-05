@@ -10,6 +10,7 @@
   color: #56c1d5;
 }
 
+/* GRID - DESKTOP */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,6 +18,7 @@
   justify-items: center;
 }
 
+/* CARD */
 .team-card {
   background: #fff;
   padding: 25px;
@@ -37,7 +39,7 @@
 .team-name {
   font-size: 20px;
   font-weight: 700;
-   color: #2976a3;
+  color: #2976a3;
 }
 
 .team-title {
@@ -58,4 +60,62 @@
   content: "• ";
   color: #56c1d5; 
   font-weight: bold;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .team-card {
+    max-width: 300px;
+  }
+
+  .team-photo {
+    height: 240px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .team-section {
+    padding: 50px 8%;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .team-card {
+    max-width: 100%;
+  }
+
+  .team-photo {
+    height: 220px;
+  }
+
+  .team-name {
+    font-size: 18px;
+  }
+
+  .team-title {
+    font-size: 14px;
+  }
+
+  .team-expertise {
+    font-size: 13px;
+  }
 }

@@ -34,7 +34,7 @@ export default function Solutions5() {
 
   return (
     <section className="solutions-section">
-      <h2 className="solutions-title">Our Solutions</h2>
+      <h2 className="solutions-title">Our Products</h2>
 
       <div className="solutions-grid">
         {solutionsData.map((item, index) => (

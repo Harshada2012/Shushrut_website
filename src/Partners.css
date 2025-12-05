@@ -1,0 +1,57 @@
+.partners-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0e244b;
+  margin-bottom: 40px;
+}
+
+.partners-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.partner-card {
+  background: transparent;
+  box-shadow: none;        
+  padding: 0;             
+  border-radius: 0;
+}
+
+.partner-logo {
+  height: 70px; 
+  width: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+  opacity: 0.9;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .partners-grid {
+    gap: 40px;
+  }
+  .partner-logo {
+    height: 55px;
+  }
+}
+
+@media (max-width: 500px) {
+  .partners-grid {
+    gap: 30px;
+  }
+  .partner-logo {
+    height: 45px;
+  }
+}

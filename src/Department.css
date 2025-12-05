@@ -10,24 +10,6 @@
   margin-bottom: 40px;
 }
 
-.dept-content {
-  display: flex;
-  align-items: center;
-  gap: 18px; 
-}
-
-.dept-icon {
-  height: 70px;
-  width: 70px;
-}
-
-.dept-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #0d2a52;
-  margin: 0;
-}
-
 .dept-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,9 +23,8 @@
   border-radius: 14px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
+  align-items: center;
+  gap: 18px;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -53,11 +34,18 @@
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
 }
 
-.dept-icon {
-  height: 55px;
+.dept-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.dept-card p {
+.dept-icon {
+  height: 55px;
+  width: 55px;
+}
+
+.dept-title {
   font-size: 18px;
   font-weight: 600;
   color: #0d2a52;
@@ -78,4 +66,62 @@
 .appoint-btn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
+}
+
+
+@media (max-width: 900px) {
+  .dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dept-card {
+    padding: 20px;
+  }
+
+  .dept-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .dept-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .department-section {
+    padding: 40px 8%;
+  }
+
+  .dept-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .dept-card {
+    justify-content: center;
+    padding: 18px;
+    text-align: center;
+    flex-direction: column; 
+  }
+
+  .dept-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dept-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .dept-title {
+    font-size: 17px;
+  }
+
+  .appoint-btn {
+    font-size: 15px;
+    padding: 12px 30px;
+  }
 }

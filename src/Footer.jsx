@@ -8,13 +8,18 @@ import {
 } from "react-icons/fa6";
 import { IoMail, IoCall, IoLocationSharp } from "react-icons/io5";
 
+import { Link as ScrollLink } from "react-scroll";
+
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
 
                 <div className="footer-section">
-                    <h2 className="footer-logo"><img src="./logo.png"></img> Shushrut System Pvt. Ltd.</h2>
+                    <h2 className="footer-logo">
+                        <img src="./logo.png" alt="" />
+                        Shushrut System Pvt. Ltd.
+                    </h2>
                     <p>
                         Delivering smart, secure, and scalable healthcare IT solutions
                         to hospitals, clinics, diagnostics, and medical institutions
@@ -32,19 +37,47 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Gallery</li>
-                        <li>Contact</li>
+                        <li><ScrollLink to="home" smooth duration={600} offset={-60}>Home</ScrollLink></li>
+                        <li><ScrollLink to="about" smooth duration={600} offset={-60}>About</ScrollLink></li>
+                        <li><ScrollLink to="products" smooth duration={600} offset={-60}>Products</ScrollLink></li>
+                        <li><ScrollLink to="gallery" smooth duration={600} offset={-60}>Gallery</ScrollLink></li>
+                        <li><ScrollLink to="why" smooth duration={600} offset={-60}>Achievements</ScrollLink></li>
+                        <li><ScrollLink to="contact" smooth duration={600} offset={-60}>Contact</ScrollLink></li>
                     </ul>
                 </div>
 
                 <div className="footer-socials">
-                    <FaFacebookF />
-                    <FaInstagram />
-                    <FaTwitter />
-                    <FaLinkedinIn />
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61581842580905"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaFacebookF />
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaInstagram />
+                    </a>
+
+                    <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaTwitter />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/padmabhushan-deshpande/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaLinkedinIn />
+                    </a>
                 </div>
             </div>
 

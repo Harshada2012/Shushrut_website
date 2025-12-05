@@ -19,6 +19,18 @@ const testimonials = [
     text: "Diagnostic reporting streamlined and billing errors reduced drastically.",
     name: "- Dr. A. Rane",
   },
+  {
+    text: "A trustworthy healthcare IT partner improving efficiency across our hospital.",
+    name: "— Dr. Neha Kulkarni",
+  },
+  {
+    text: "Excellent support team — quick response and professional service always.",
+    name: "— Dr. Sneha Bansode",
+  },
+  {
+    text: "Shushrut System made our clinic workflow smoother and fully digital.",
+    name: "— Dr. Kavita Jadhav",
+  },
 ];
 
 const Clients = () => {
