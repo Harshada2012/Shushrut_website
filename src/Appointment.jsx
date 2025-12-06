@@ -31,7 +31,7 @@ const Appointment = () => {
 
           <textarea placeholder="Your Message"></textarea>
 
-          <button className="appointment-btn">Book Appointment</button>
+          <button className="appointment-btn">Book Demo</button>
         </form>
       </div>
 

@@ -26,7 +26,6 @@ export default function Medical3() {
                     <li><i className="check-icon">✔</i> Compliance-Ready (NABH, HL7, ICD-10/11)</li>
                 </ul>
 
-                <button className="hero-btn">Schedule Appointment</button>
             </div>
 
             <div className="hero-right">

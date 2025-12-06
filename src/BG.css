@@ -1,3 +1,7 @@
+/* ===========================
+   BASE / DESKTOP (unchanged)
+   =========================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ body {
     position: relative;
     width: 100%;
     height: 750px;
-    background-image: url('/doctor.avif');
+    background-image: url('/doctor 3.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,20 +43,13 @@ body {
     animation: textSlide 1.2s ease-out forwards;
 }
 
-.next-section {  
+.next-section {
     margin-top: 0 !important;
 }
 
 @keyframes textSlide {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
 }
 
 .BG-tag {
@@ -106,9 +103,7 @@ body {
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
 }
 
-.btn-1:hover {
-    background: #e6e6e6;
-}
+.btn-1:hover { background: #e6e6e6; }
 
 .btn-2 {
     background: #49a0b4;
@@ -116,7 +111,88 @@ body {
     box-shadow: 0 5px 20px rgba(109, 213, 237, 0.4);
 }
 
-.btn-2:hover {
-    background: #54c3df;
+.btn-2:hover { background: #54c3df; }
+
+
+/* ===========================
+   TABLET RESPONSIVE
+   =========================== */
+@media (max-width: 1024px) {
+    .BG {
+        height: 650px;
+    }
+
+    .BG-content {
+        top: 25%;
+        left: 8%;
+        width: 80%;
+    }
+
+    .BG-content h1 {
+        font-size: 38px;
+    }
+
+    .BG-content p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .BG-buttons {
+        gap: 12px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
 }
 
+
+/* ===========================
+   MOBILE RESPONSIVE
+   =========================== */
+@media (max-width: 600px) {
+    .BG {
+        height: 580px;
+        background-position: top;
+    }
+
+    .BG-content {
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%) !important;   /* center text */
+        width: 90%;
+        text-align: center;
+    }
+
+    .BG-tag {
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    .BG-content h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .BG-content p {
+        font-size: 15px;
+        margin: 15px auto 0;
+        max-width: 100%;
+    }
+
+    .BG-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        gap: 12px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 80%;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+}

@@ -15,7 +15,6 @@ export default function BG() {
                 </p>
 
                 <div className="BG-buttons">
-                    <button className="btn-1">Make Appointment</button>
                     <button className="btn-2">Our Services</button>
                 </div>
             </div>

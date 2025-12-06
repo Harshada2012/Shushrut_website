@@ -1,6 +1,7 @@
 .solutions-section {
   padding: 70px 0;
   background: #e9f3ff;
+  height: 810px;
   text-align: center;
 }
 
@@ -18,7 +19,6 @@
   font-size: 16px;
 }
 
-/* GRID */
 .solutions-grid {
   max-width: 1150px;
   margin: auto;
@@ -45,7 +45,6 @@
   }
 }
 
-/* CARD */
 .solution-card {
   background: #ffffff;
   padding: 30px 20px;
@@ -54,7 +53,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: all 0.25s ease;
   text-align: center;
-  cursor: pointer; /* makes card clickable */
+  cursor: pointer;
 }
 
 .solution-card:hover {
@@ -62,13 +61,11 @@
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* ICON */
 .solution-icon {
   font-size: 45px;
   margin-bottom: 16px;
 }
 
-/* TEXT */
 .solution-card h3 {
   font-size: 20px;
   font-weight: 700;

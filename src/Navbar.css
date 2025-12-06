@@ -25,6 +25,10 @@
   gap: 10px;
 }
 
+.nav-name{
+  font-size: 18px;
+}
+
 .nav-content {
   display: flex;
 }
@@ -32,8 +36,8 @@
 .nav-nav {
   display: flex;
   gap: 35px;
-  list-style: none;
   align-items: center;
+  list-style: none;
 }
 
 .nav-nav li {
@@ -48,9 +52,9 @@
 .nav-btn {
   padding: 10px 25px;
   background: #49a0b4;
-  border: none;
   color: white;
   border-radius: 30px;
+  border: none;
   cursor: pointer;
 }
 
@@ -68,80 +72,94 @@
   cursor: pointer;
 }
 
+/* ===========================
+   ROCHE STYLE DROPDOWN
+=========================== */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Larger, card-like box */
+.dropdown-menu {
+  position: absolute;
+  top: 48px;             /* pushes the dropdown lower */
+  left: 0;
+  min-width: 260px;      /* bigger, like Roche */
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 10px;
+  list-style: none;
+
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  z-index: 999;
+}
+
+/* Show on hover (desktop) */
+@media (min-width: 900px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li button,
+.dropdown-menu li a {
+  width: 100%;
+  font-size: 15px;
+  color: #444;
+  text-align: left;
+  padding: 4px 0;
+}
+
+/* Subtle hover like Roche */
+.dropdown-menu li:hover {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Arrow */
+.dropdown-arrow {
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* Rotate arrow when open (mobile) */
+.dropdown.open .dropdown-arrow {
+  transform: rotate(90deg);
+}
+
+/* ===== MOBILE BEHAVIOR ===== */
 @media (max-width: 900px) {
-  .hamburger {
-    display: block;
-  }
 
-  .desktop-btn {
-    display: none;
-  }
-
-  .nav-content {
-    position: absolute;
-    top: 60px;            
+  .dropdown-menu {
+    position: relative;
+    top: 6px;
     left: 0;
-    width: 100%;
-    background: white;
-    padding: 24px 16px;       
-    border-radius: 0 0 12px 12px;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: all 220ms ease;
-    z-index: 1500;        
-  }
-
-  .nav-content.open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .nav-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    align-items: center;
-    width: 100%;
-  }
-
-  .nav-nav li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-nav li b {
-    font-size: 18px;
-    color: #222;
-    display: inline-block;
-    padding: 6px 8px;
-  }
-
-  .mobile-btn {
-    display: block;
-    width: 100%;
-    margin-top: 6px;
-  }
-
-  .mobile-btn .nav-btn {
-    width: 70%;
-    min-width: 180px;
-    max-width: 320px;
-    padding: 10px 22px;
-    font-size: 16px;
-    border-radius: 28px;
-    display: inline-block;
-  }
-
-  .desktop-btn {
+    box-shadow: none;
+    background: #f3f3f3;
+    padding: 12px 16px;
+    border-radius: 6px;
     display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: flex;
   }
 }

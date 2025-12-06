@@ -6,25 +6,25 @@ const solutionsData = [
   {
     icon: "/solutions_icon/hospital.png",
     title: "Hospital Software",
-    desc: "Automates workflows, record management & secure patient care.",
+    desc: "Our hospital software enhances efficiency, automates workflows, manages records, and ensures seamless, secure, and patient-centric healthcare management for hospitals and clinics.",
     link: "/hospital",
   },
   {
     icon: "/solutions_icon/clinic.png",
     title: "Clinic Software",
-    desc: "Streamlines appointments, billing & records for clinics.",
+    desc: "Our clinic software streamlines appointments, billing, records, and patient management for efficient and seamless healthcare delivery.",
     link: "/clinic",
   },
   {
     icon: "/solutions_icon/diagnostic.png",
     title: "Diagnostic Software",
-    desc: "Manages labs, tests, reports, and billing with ease.",
+    desc: "Our diagnostic software streamlines operations, test management, reporting, and billing for both individual labs and diagnostic chains.",
     link: "/diagnostic",
   },
   {
     icon: "/solutions_icon/medical.png",
     title: "Medical College Software",
-    desc: "Combines academics with hospital systems.",
+    desc: "Our medical college hospital software integrates patient care, academic management, and hospital operations for seamless efficiency and improved healthcare education.",
     link: "/medical",
   },
 ];
@@ -35,7 +35,8 @@ export default function Solutions5() {
   return (
     <section className="solutions-section">
       <h2 className="solutions-title">Our Products</h2>
-
+      <br></br>
+      <br></br>
       <div className="solutions-grid">
         {solutionsData.map((item, index) => (
           <div

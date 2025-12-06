@@ -17,54 +17,59 @@ import Solutions5 from "./Solutions5";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ClinicPage from "./ClinicPage";
-import HospitalPage from "./HospitalPage";
+// import HospitalPage from "./HospitalPage";
+import HospitalSoftware from "./HospitalSoftware";
 import DiagnosticPage from "./DiagnosticPage";
 import MedicalPage from "./MedicalPage";
+import ProductsIntro from './ProductsIntro';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
 
-        {/* HOME PAGE / SCROLL PAGE */}
         <Route
-  path="/"
-  element={
-    <>
-      <div id="home"><FirstPage /></div>
+          path="/"
+          element={
+            <>
+              <div id="home"><FirstPage /></div>
 
-      <Department2 />
+              <Department2 />
 
-      <Medical3 />
+              <Medical3 />
 
-      <Values4 />
+              <Values4 />
 
-      <Bar />
+              <Bar />
 
-      <div id="products"><Solutions5 /></div>
+              <div id="products"><ProductsIntro /></div>
 
-      <Appointment />
+              {/* <Solutions5 /> */}
 
-      <div id="services"><WhyChooseUs /></div>
+              <Appointment />
 
-      <Clients />
+              <div id="services"><WhyChooseUs /></div>
 
-      <div id="about"><Ceo /></div>
+              <Clients />
 
-      <Team />
+              <div id="about"><Ceo /></div>
 
-      <Members />
+              <Team />
 
-      <div id="gallery"><Partners /></div>
+              <Members />
 
-      <div id="contact"><Footer /></div>
-    </>
-  }
-/>
+              <div id="gallery"><Partners /></div>
 
-        {/* SEPARATE PAGES */}
+              <div id="contact"><Footer /></div>
+            </>
+          }
+        />
+        <Route path="/" element={<> ...homepage... </>} />
+        <Route path="/solutions" element={<Solutions5 />} />
         <Route path="/clinic" element={<ClinicPage />} />
-        <Route path="/hospital" element={<HospitalPage />} />
+        {/* <Route path="/hospital" element={<HospitalPage />} /> */}
+        <Route path="/hospital" element={<HospitalSoftware />} />
         <Route path="/diagnostic" element={<DiagnosticPage />} />
         <Route path="/medical" element={<MedicalPage />} />
       </Routes>
